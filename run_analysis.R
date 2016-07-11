@@ -93,5 +93,9 @@ names(average_by_activity_and_subject)[names(average_by_activity_and_subject)=="
 names(average_by_activity_and_subject)[names(average_by_activity_and_subject)=="Group.2"] <- "activity_label"
 names(average_by_activity_and_subject)[names(average_by_activity_and_subject)=="Group.3"] <- "subject_id"
 
+# write output files
+write.csv(combined_training_and_test, file = "combined_training_and_test.csv")
+write.csv(average_by_activity_and_subject, file = "average_by_activity_and_subject.csv")
+
 
 
